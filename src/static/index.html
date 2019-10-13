@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2ch-timeline</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .stream-item {
+        margin-top: 10px;
+        display: block;
+    }
+</style>
+<body>
+<div class="container-fluid" id="app">
+    <h1 class="text-center">2ch Timeline</h1>
+    <div class="row">
+        <div class="col">
+            <span>BTC Address for donations: <b>bc1q9p70m8smtf0dw42l90297zlfuysh9ll0fpv7mc</b></span> <br>
+            <span>Online: <span id="online-users" class="badge badge-success">0</span></span> <br>
+            <span>Source code: <a href="2ch-timeline.tar.gz">2ch-timeline.tar.gzil.</a></span>
+        </div>
+        <div class="col">
+            <span>Email address for communication and support: <a href="mailto:gdhjnabnb@mail.ru">gdhjnabnb@mail.ru</a> </span>
+            <br>
+            <span>Telegram channel: <a href="https://t.me/tk_2ch_timeline">@tk_2ch_timeline</a> </span> <br>
+            <span>Basic board: <a href="https://2ch.hk/b/res/205346852.html">https://2ch.hk/b/res/205346852.html</a></span>
+            <br>
+        </div>
+    </div>
+    <div class="text-center" style="margin: 5px">
+        <a
+                class="btn btn-lg btn-primary"
+                href="#"
+                role="button"
+                title="Pause/Resume"
+                id="btn-pause"
+        >Pause</a>
+    </div>
+    <div class="row">
+        <div class="col video text-center" style="border-right: black solid">
+            <h2>Video</h2>
+            <div id="video-container" style="margin-top: 10px"></div>
+        </div>
+        <div class="col image text-center">
+            <h2>Image</h2>
+            <div id="image-container" style="margin-top: 10px"></div>
+        </div>
+    </div>
+</div>
+<div id="stream">
+</div>
+<script src="app.js?v=askdjak"></script>
+</body>
+</html>
